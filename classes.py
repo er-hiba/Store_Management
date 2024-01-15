@@ -79,4 +79,4 @@ class Store:
 
     def __str__(self):
         product_info = [f"{product.get_name}: Quantity={product.get_quantity}, Price={product.get_selling_price}" for product in self.__stock ]
-        return f"{self.__address} \nBilan:\n" + "\n".join(product_info)
+        return f"Address: {self.__address} \nProducts:\n" + "\n".join(product_info)
